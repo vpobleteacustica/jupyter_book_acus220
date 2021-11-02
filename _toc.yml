@@ -1,0 +1,12 @@
+
+format: jb-book
+root: README
+parts:
+  - caption: Uso de Git
+    numbered: true
+    chapters:
+    - file: contenidos/contenidos_1/contenidos_1_crear_repo.md
+  - caption: Uso de Git
+    numbered: true
+    chapters:
+    - file: contenidos/contenidos_2/contenidos_2_actualizar_repo.md
