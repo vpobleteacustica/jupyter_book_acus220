@@ -216,32 +216,32 @@
   <div class="tex2jax_ignore mathjax_ignore section" id="queremos-ahora-hacer-una-actualizacion-de-nuestro-repositorio">
 <h1><span class="section-number">5. </span>Queremos ahora hacer una actualización de nuestro repositorio.<a class="headerlink" href="#queremos-ahora-hacer-una-actualizacion-de-nuestro-repositorio" title="Enlazar permanentemente con este título">¶</a></h1>
 <ul class="simple">
-<li><p>1. Como ya vemos, estamos en la rama <span style="color: blue; font-family: Babas; font-size: 1.12em;">main</span>.</p></li>
-<li><p>2. Vamos a hacer una nueva <span style="color: blue; font-family: Babas; font-size: 1.12em;">rama</span>. En ocasiones se le llama rama de producción, es decir, la rama que queremos mostrar, que queremos subir como la versión funcional de nuestro proyecto.</p></li>
-<li><p>3. Supongamos que queremos hacer alguna tarea en específico, por ejemplo, extraer <span style="color: blue; font-family: Babas; font-size: 1.12em;">features</span> de una señal de audio. Para eso, crearemos una nueva rama que la llamaremos <span style="color: blue; font-family: Babas; font-size: 1.12em;">feature_1</span>. Para esto, vamos a ejecutar <span style="color: blue; font-family: Babas; font-size: 1.12em;">git checkout -b</span> y agregaremos a continuación, el nombre que le queremos dar a la nueva rama:</p></li>
+<li><p>Como ya vemos, estamos en la rama <span style="color: blue; font-family: Babas; font-size: 1.12em;">main</span>.</p></li>
+<li><p>Vamos a hacer una nueva <span style="color: blue; font-family: Babas; font-size: 1.12em;">rama</span>. En ocasiones se le llama rama de producción, es decir, la rama que queremos mostrar, que queremos subir como la versión funcional de nuestro proyecto.</p></li>
+<li><p>Supongamos que queremos hacer alguna tarea en específico, por ejemplo, extraer <span style="color: blue; font-family: Babas; font-size: 1.12em;">features</span> de una señal de audio. Para eso, crearemos una nueva rama que la llamaremos <span style="color: blue; font-family: Babas; font-size: 1.12em;">feature_1</span>. Para esto, vamos a ejecutar <span style="color: blue; font-family: Babas; font-size: 1.12em;">git checkout -b</span> y agregaremos a continuación, el nombre que le queremos dar a la nueva rama:</p></li>
 </ul>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">kasparov@kasparov-MS-7B58:~/Escritorio/github/uso_git$ </span>git checkout -b feature_1
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>4. La idea es que el nombre de la rama sea lo más descriptivo posible de lo que contiene esa rama. Si todo está bien, deberíamos ver:</p></li>
+<li><p>La idea es que el nombre de la rama sea lo más descriptivo posible de lo que contiene esa rama. Si todo está bien, deberíamos ver:</p></li>
 </ul>
 <a class="bg-primary reference internal image-reference" href="../../_images/nueva_rama.png"><img alt="fishy" class="bg-primary align-center" src="../../_images/nueva_rama.png" style="width: 550px;" /></a>
 <ul class="simple">
-<li><p>5. Lo que hemos hecho en este paso anterior, es que hemos tomado todo el código que se encuentra en la rama <span style="color: blue; font-family: Babas; font-size: 1.12em;">main</span> y lo hemos copiado a esta nueva rama <span style="color: blue; font-family: Babas; font-size: 1.12em;">feature_1</span>. Imagínenselo como que ambas ramas ahora van en el mismo nivel de código, porque hasta ahora no hemos hecho ningún cambio.</p></li>
-<li><p>6. Aquí en esta rama nueva es donde empezamos a trabajar, a crear archivos y cambiar en el código.</p></li>
+<li><p>Lo que hemos hecho en este paso anterior, es que hemos tomado todo el código que se encuentra en la rama <span style="color: blue; font-family: Babas; font-size: 1.12em;">main</span> y lo hemos copiado a esta nueva rama <span style="color: blue; font-family: Babas; font-size: 1.12em;">feature_1</span>. Imagínenselo como que ambas ramas ahora van en el mismo nivel de código, porque hasta ahora no hemos hecho ningún cambio.</p></li>
+<li><p>Aquí en esta rama nueva es donde empezamos a trabajar, a crear archivos y cambiar en el código.</p></li>
 </ul>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="crear-un-archivo-nuevo-de-python-y-poner-algo-de-codigo">
 <h1><span class="section-number">6. </span>Crear un archivo nuevo de Python y poner algo de código.<a class="headerlink" href="#crear-un-archivo-nuevo-de-python-y-poner-algo-de-codigo" title="Enlazar permanentemente con este título">¶</a></h1>
 <ul class="simple">
-<li><p>1. Ejecutaremos el siguiente comando para crear un archivo nuevo de Python:</p></li>
+<li><p>Ejecutaremos el siguiente comando para crear un archivo nuevo de Python:</p></li>
 </ul>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">kasparov@kasparov-MS-7B58:~/Escritorio/github/uso_git$ </span>touch tutorial_1.py
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>2. Vamos a abrir el archivo recién creado usando Visual Studio Code y agregaremos un poco de cógido Python:</p></li>
+<li><p>Vamos a abrir el archivo recién creado usando Visual Studio Code y agregaremos un poco de cógido Python:</p></li>
 </ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Hello world </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
@@ -250,22 +250,22 @@
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>3. Para probar, vamos a ejecutar el código desde la terminal y si todo está bien, deberíamos ver:</p></li>
+<li><p>Para probar, vamos a ejecutar el código desde la terminal y si todo está bien, deberíamos ver:</p></li>
 </ul>
 <a class="bg-primary reference internal image-reference" href="../../_images/hello_world.png"><img alt="fishy" class="bg-primary align-center" src="../../_images/hello_world.png" style="width: 550px;" /></a>
 <ul class="simple">
-<li><p>4. En este ejemplo que ya funciona, vemos que estaríamos listos con nuestro <span style="color: blue; font-family: Babas; font-size: 1.12em;">feature_1</span>.</p></li>
+<li><p>En este ejemplo que ya funciona, vemos que estaríamos listos con nuestro <span style="color: blue; font-family: Babas; font-size: 1.12em;">feature_1</span>.</p></li>
 </ul>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="uso-de-source-control-en-visual-studio-code-vsc">
 <h1><span class="section-number">7. </span>Uso de Source Control en Visual Studio Code (VSC).<a class="headerlink" href="#uso-de-source-control-en-visual-studio-code-vsc" title="Enlazar permanentemente con este título">¶</a></h1>
 <ul class="simple">
-<li><p>1. <span style="color: blue; font-family: Babas; font-size: 1.12em;">Source Control</span> en VSC está integrado y se conecta con <span style="color: blue; font-family: Babas; font-size: 1.12em;">Git</span>.</p></li>
-<li><p>2. En VSC, vamos a abrir una carpeta. Desde VSC nos vamos a nuestro repositorio que está en el escritorio, en la carpeta que llamamos: <span style="color: blue; font-family: Babas; font-size: 1.12em;">github</span>, y llegamos a nuestro repositorio: <span style="color: blue; font-family: Babas; font-size: 1.12em;">uso_git</span>.</p></li>
-<li><p>3. Y abrimos nuestro repositorio <span style="color: blue; font-family: Babas; font-size: 1.12em;">uso_git</span>.</p></li>
-<li><p>4. Podemos observar en VSC todos los archivos que están en nuestro repositorio.</p></li>
-<li><p>5. Pero, también a mano izquierda, podemos observar una pestaña que se llama <span style="color: blue; font-family: Babas; font-size: 1.12em;">Source Control</span>, en donde se muestran todos los cambios que hemos ido realizando. Debería decir que solamente hemos cambiado <span style="color: blue; font-family: Babas; font-size: 1.12em;">tutorial_1.py</span>.</p></li>
-<li><p>6. Otra cosa importante que observar es que al fondo de VSC nos dice en qué rama nos encontramos, en este caso, <span style="color: blue; font-family: Babas; font-size: 1.12em;">feature_1</span>.</p></li>
+<li><p><span style="color: blue; font-family: Babas; font-size: 1.12em;">Source Control</span> en VSC está integrado y se conecta con <span style="color: blue; font-family: Babas; font-size: 1.12em;">Git</span>.</p></li>
+<li><p>En VSC, vamos a abrir una carpeta. Desde VSC nos vamos a nuestro repositorio que está en el escritorio, en la carpeta que llamamos: <span style="color: blue; font-family: Babas; font-size: 1.12em;">github</span>, y llegamos a nuestro repositorio: <span style="color: blue; font-family: Babas; font-size: 1.12em;">uso_git</span>.</p></li>
+<li><p>Y abrimos nuestro repositorio <span style="color: blue; font-family: Babas; font-size: 1.12em;">uso_git</span>.</p></li>
+<li><p>Podemos observar en VSC todos los archivos que están en nuestro repositorio.</p></li>
+<li><p>Pero, también a mano izquierda, podemos observar una pestaña que se llama <span style="color: blue; font-family: Babas; font-size: 1.12em;">Source Control</span>, en donde se muestran todos los cambios que hemos ido realizando. Debería decir que solamente hemos cambiado <span style="color: blue; font-family: Babas; font-size: 1.12em;">tutorial_1.py</span>.</p></li>
+<li><p>Otra cosa importante que observar es que al fondo de VSC nos dice en qué rama nos encontramos, en este caso, <span style="color: blue; font-family: Babas; font-size: 1.12em;">feature_1</span>.</p></li>
 </ul>
 </div>
 
