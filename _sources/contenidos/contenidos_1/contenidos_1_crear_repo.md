@@ -1,12 +1,12 @@
 # Crear un nuevo repositorio en GitHub.
 
-* 1\. Entrar a su cuenta en GitHub y crear un repositorio nuevo.
+* Entrar a su cuenta en GitHub y crear un repositorio nuevo.
 
-* 2\. Darle un nombre al repositorio Git.
-    * 2.1\. Por ejemplo, le llamaremos <span style="color: blue; font-family: Babas; font-size: 1.12em;">uso_git</span>.
+* Darle un nombre al repositorio Git.
+    * Por ejemplo, le llamaremos <span style="color: blue; font-family: Babas; font-size: 1.12em;">uso_git</span>.
 
-* 3\. Redactar una descripción inicial.
-    * 3.1\. Por ejemplo: Uso básico de Git y primeras aplicaciones.
+* Redactar una descripción inicial.
+    * Por ejemplo: Uso básico de Git y primeras aplicaciones.
 
 * 4\. Elegir entre Privado o Público.
     * 4.1\. Sugerencia seleccionar Público.
