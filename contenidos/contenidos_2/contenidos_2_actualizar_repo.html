@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>5. Queremos ahora hacer una actualización de nuestro repositorio. &#8212; &lt;font size=&#34;4&#34;&gt; ACUS220 Acústica computacional con Python&lt;/font&gt;</title>
+    <title>El tema de las ramas. &#8212; &lt;font size=&#34;4&#34;&gt; ACUS220 Acústica computacional con Python&lt;/font&gt;</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -52,7 +52,7 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Índice" href="../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../search.html" />
-    <link rel="prev" title="1. Crear un nuevo repositorio en GitHub." href="../contenidos_1/contenidos_1_crear_repo.html" />
+    <link rel="prev" title="Crear un proyecto en un repositorio nuevo." href="../contenidos_1/contenidos_1_crear_repo.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -95,25 +95,25 @@
 </ul>
 <p class="caption" role="heading">
  <span class="caption-text">
-  Uso de Git
+  Crear un proyecto en un repositorio nuevo
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../contenidos_1/contenidos_1_crear_repo.html">
-   1. Crear un nuevo repositorio en GitHub.
+   Crear un proyecto en un repositorio nuevo.
   </a>
  </li>
 </ul>
 <p class="caption" role="heading">
  <span class="caption-text">
-  Uso de Git
+  El tema de las ramas
  </span>
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   5. Queremos ahora hacer una actualización de nuestro repositorio.
+   El tema de las ramas.
   </a>
  </li>
 </ul>
@@ -189,17 +189,17 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   5. Queremos ahora hacer una actualización de nuestro repositorio.
+   El tema de las ramas.
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#crear-un-archivo-nuevo-de-python-y-poner-algo-de-codigo">
-   6. Crear un archivo nuevo de Python y poner algo de código.
+   Crear un archivo nuevo de Python y poner algo de código.
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#uso-de-source-control-en-visual-studio-code-vsc">
-   7. Uso de Source Control en Visual Studio Code (VSC).
+   Uso de Source Control en Visual Studio Code (VSC).
   </a>
  </li>
 </ul>
@@ -213,12 +213,13 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="queremos-ahora-hacer-una-actualizacion-de-nuestro-repositorio">
-<h1><span class="section-number">5. </span>Queremos ahora hacer una actualización de nuestro repositorio.<a class="headerlink" href="#queremos-ahora-hacer-una-actualizacion-de-nuestro-repositorio" title="Enlazar permanentemente con este título">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="el-tema-de-las-ramas">
+<h1>El tema de las ramas.<a class="headerlink" href="#el-tema-de-las-ramas" title="Enlazar permanentemente con este título">¶</a></h1>
 <ul class="simple">
+<li><p>Queremos ahora hacer una actualización de nuestro repositorio.</p></li>
 <li><p>Como ya vemos, estamos en la rama <span style="color: blue; font-family: Babas; font-size: 1.12em;">main</span>.</p></li>
 <li><p>Vamos a hacer una nueva <span style="color: blue; font-family: Babas; font-size: 1.12em;">rama</span>. En ocasiones se le llama rama de producción, es decir, la rama que queremos mostrar, que queremos subir como la versión funcional de nuestro proyecto.</p></li>
-<li><p>Supongamos que queremos hacer alguna tarea en específico, por ejemplo, extraer <span style="color: blue; font-family: Babas; font-size: 1.12em;">features</span> de una señal de audio. Para eso, crearemos una nueva rama que la llamaremos <span style="color: blue; font-family: Babas; font-size: 1.12em;">feature_1</span>. Para esto, vamos a ejecutar <span style="color: blue; font-family: Babas; font-size: 1.12em;">git checkout -b</span> y agregaremos a continuación, el nombre que le queremos dar a la nueva rama:</p></li>
+<li><p>Supongamos que queremos hacer algún tipo de proyecto específico, por ejemplo, procesar una señal de audio para extraer de ella <span style="color: blue; font-family: Babas; font-size: 1.12em;">features</span> o características la señal. Para eso, crearemos una nueva rama que la llamaremos <span style="color: blue; font-family: Babas; font-size: 1.12em;">feature_1</span>. Para esto, vamos a ejecutar <span style="color: blue; font-family: Babas; font-size: 1.12em;">git checkout -b</span> y agregaremos a continuación, el nombre que le queremos dar a la nueva rama:</p></li>
 </ul>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">kasparov@kasparov-MS-7B58:~/Escritorio/github/uso_git$ </span>git checkout -b feature_1
 </pre></div>
@@ -233,7 +234,7 @@
 </ul>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="crear-un-archivo-nuevo-de-python-y-poner-algo-de-codigo">
-<h1><span class="section-number">6. </span>Crear un archivo nuevo de Python y poner algo de código.<a class="headerlink" href="#crear-un-archivo-nuevo-de-python-y-poner-algo-de-codigo" title="Enlazar permanentemente con este título">¶</a></h1>
+<h1>Crear un archivo nuevo de Python y poner algo de código.<a class="headerlink" href="#crear-un-archivo-nuevo-de-python-y-poner-algo-de-codigo" title="Enlazar permanentemente con este título">¶</a></h1>
 <ul class="simple">
 <li><p>Ejecutaremos el siguiente comando para crear un archivo nuevo de Python:</p></li>
 </ul>
@@ -258,7 +259,7 @@
 </ul>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="uso-de-source-control-en-visual-studio-code-vsc">
-<h1><span class="section-number">7. </span>Uso de Source Control en Visual Studio Code (VSC).<a class="headerlink" href="#uso-de-source-control-en-visual-studio-code-vsc" title="Enlazar permanentemente con este título">¶</a></h1>
+<h1>Uso de Source Control en Visual Studio Code (VSC).<a class="headerlink" href="#uso-de-source-control-en-visual-studio-code-vsc" title="Enlazar permanentemente con este título">¶</a></h1>
 <ul class="simple">
 <li><p><span style="color: blue; font-family: Babas; font-size: 1.12em;">Source Control</span> en VSC está integrado y se conecta con <span style="color: blue; font-family: Babas; font-size: 1.12em;">Git</span>.</p></li>
 <li><p>En VSC, vamos a abrir una carpeta. Desde VSC nos vamos a nuestro repositorio que está en el escritorio, en la carpeta que llamamos: <span style="color: blue; font-family: Babas; font-size: 1.12em;">github</span>, y llegamos a nuestro repositorio: <span style="color: blue; font-family: Babas; font-size: 1.12em;">uso_git</span>.</p></li>
@@ -303,7 +304,7 @@
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">anterior</p>
-                <p class="prevnext-title"><span class="section-number">1. </span>Crear un nuevo repositorio en GitHub.</p>
+                <p class="prevnext-title">Crear un proyecto en un repositorio nuevo.</p>
             </div>
         </a>
     </div>

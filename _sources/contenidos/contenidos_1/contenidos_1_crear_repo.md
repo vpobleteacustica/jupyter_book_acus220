@@ -1,4 +1,4 @@
-# Crear un nuevo repositorio en GitHub.
+# Crear un proyecto en un repositorio nuevo.
 
 * Entrar a su cuenta en GitHub y crear un repositorio nuevo.
 

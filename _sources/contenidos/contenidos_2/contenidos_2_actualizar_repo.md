@@ -1,10 +1,12 @@
-# Queremos ahora hacer una actualización de nuestro repositorio.
+# El tema de las ramas.
+
+* Queremos ahora hacer una actualización de nuestro repositorio.
 
 * Como ya vemos, estamos en la rama <span style="color: blue; font-family: Babas; font-size: 1.12em;">main</span>.
 
 * Vamos a hacer una nueva <span style="color: blue; font-family: Babas; font-size: 1.12em;">rama</span>. En ocasiones se le llama rama de producción, es decir, la rama que queremos mostrar, que queremos subir como la versión funcional de nuestro proyecto.
 
-* Supongamos que queremos hacer alguna tarea en específico, por ejemplo, extraer <span style="color: blue; font-family: Babas; font-size: 1.12em;">features</span> de una señal de audio. Para eso, crearemos una nueva rama que la llamaremos <span style="color: blue; font-family: Babas; font-size: 1.12em;">feature_1</span>. Para esto, vamos a ejecutar <span style="color: blue; font-family: Babas; font-size: 1.12em;">git checkout -b</span> y agregaremos a continuación, el nombre que le queremos dar a la nueva rama:
+* Supongamos que queremos hacer algún tipo de proyecto específico, por ejemplo, procesar una señal de audio para extraer de ella <span style="color: blue; font-family: Babas; font-size: 1.12em;">features</span> o características la señal. Para eso, crearemos una nueva rama que la llamaremos <span style="color: blue; font-family: Babas; font-size: 1.12em;">feature_1</span>. Para esto, vamos a ejecutar <span style="color: blue; font-family: Babas; font-size: 1.12em;">git checkout -b</span> y agregaremos a continuación, el nombre que le queremos dar a la nueva rama:
 
 ```console
 kasparov@kasparov-MS-7B58:~/Escritorio/github/uso_git$ git checkout -b feature_1
