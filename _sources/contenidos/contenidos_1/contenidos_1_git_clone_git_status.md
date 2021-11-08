@@ -1,16 +1,18 @@
-# Ramas en el repositorio.
+# Uso de git clone y git status
 
-* Siempre al principio en el repositorio hay una sola <span style="color: blue; font-family: Babas; font-size: 1.12em;">rama</span> que se llama main y que es la rama principal.
+## Trae este repositorio a tu máquina local.
 
 * Trae ahora a tu máquina local, este repositorio GitHub recién creado.
 
-* Por simplicidad, en el escritorio de tu máquina local, crea una nueva carpeta. Por ejemplo, llámale <span style="color: blue; font-family: Babas; font-size: 1.12em;">github</span>.
+* En tu máquina local, crea una nueva carpeta. Dale un nombre descriptivo de lo que se trata, por ejemplo, llámale <span style="color: blue; font-family: Babas; font-size: 1.12em;">github</span>.
 
-* Cambia el directorio (<span style="color: blue; font-family: Babas; font-size: 1.12em;">cd</span>) y entra a tu nueva carpeta. Abre tu terminal y activa tu ambiente virtual. Asegúrate de tener instalado python y git.
+* Abre tu terminal y entra (<span style="color: blue; font-family: Babas; font-size: 1.12em;">cd</span>) a tu nueva carpeta. 
 
-* Clona el repositorio usando un cliente git.
+* Activa tu ambiente virtual. Asegúrate de tener instalado Python y git.
 
-* Copia la dirección del repositorio que acabamos de crear en GitHub y en la terminal abierta, ejecuta la siguiente línea de comando: 
+* Vamos a clonar el repositorio usando un cliente git.
+
+* Copia la dirección del repositorio que acabamos de crear en GitHub y en tu terminal abierta, ejecuta la siguiente línea de comando: 
 
 ```console
 kasparov@kasparov-MS-7B58:~/Escritorio/github$ git clone <link del repositorio GitHub>
@@ -22,7 +24,7 @@ kasparov@kasparov-MS-7B58:~/Escritorio/github$ git clone <link del repositorio G
 
 <br/><br/>
 
-## Entra a la carpeta (cd).
+## Entra a la carpeta (cd) clonada.
 
 * En la terminal abierta, entra a la carpeta ejecutando la línea de comando: 
 

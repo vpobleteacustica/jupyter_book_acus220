@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>5. El tema de las ramas. &#8212; &lt;font size=&#34;4&#34;&gt; ACUS220 Acústica computacional con Python&lt;/font&gt;</title>
+    <title>9. Anda a GitHub a tu repositorio &#8212; &lt;font size=&#34;4&#34;&gt; ACUS220 Acústica computacional con Python&lt;/font&gt;</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -52,8 +52,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Índice" href="../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../search.html" />
-    <link rel="next" title="6. El tema de las ramas." href="contenidos_3_incluyendo_codigos.html" />
-    <link rel="prev" title="4. El tema de las ramas." href="../contenidos_2/contenidos_2_incluyendo_codigos.html" />
+    <link rel="next" title="10. Combina tus ramas" href="contenidos_4_merge.html" />
+    <link rel="prev" title="8. Uso de los comandos git push" href="contenidos_4_push.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -90,7 +90,7 @@
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../README.html">
-   Creación de un proyecto usando un repositorio GitHub
+   Crear un proyecto usando un repositorio GitHub
   </a>
  </li>
 </ul>
@@ -102,12 +102,12 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../contenidos_1/contenidos_1_crear_repo.html">
-   1. Crea un proyecto en un repositorio nuevo.
+   1. En GitHub crea un repositorio nuevo.
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../contenidos_1/contenidos_1_ramas.html">
-   2. Ramas en el repositorio.
+  <a class="reference internal" href="../contenidos_1/contenidos_1_git_clone_git_status.html">
+   2. Uso de git clone y git status
   </a>
  </li>
 </ul>
@@ -119,29 +119,61 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../contenidos_2/contenidos_2_actualizar_repo.html">
-   3. El tema de las ramas.
+   3. Uso de git checkout -b &lt;nombre_de_la_nueva_rama&gt;
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../contenidos_2/contenidos_2_incluyendo_codigos.html">
-   4. El tema de las ramas.
+   4. Seguimiento de los cambios.
   </a>
  </li>
 </ul>
 <p class="caption" role="heading">
  <span class="caption-text">
-  El tema de las ramas 2
+  Agregar cambios y hacer commits
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   5. El tema de las ramas.
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../contenidos_3/contenidos_3_agregar_cambios.html">
+   5. Uso de git add, para agregar los cambios.
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="contenidos_3_incluyendo_codigos.html">
-   6. El tema de las ramas.
+  <a class="reference internal" href="../contenidos_3/contenidos_3_paso_paso.html">
+   6. Paso a paso para actualizar:
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../contenidos_3/contenidos_3_los_committs.html">
+   7. Uso del comando commit:
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Uso git push y actualiza GitHub
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="contenidos_4_push.html">
+   8. Uso de los comandos git push
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   9. Anda a GitHub a tu repositorio
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contenidos_4_merge.html">
+   10. Combina tus ramas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contenidos_4_actualiza_repo_local.html">
+   11. Uso de comando git pull
   </a>
  </li>
 </ul>
@@ -185,7 +217,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/contenidos/contenidos_3/contenidos_3_actualizar_repo.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/contenidos/contenidos_4/contenidos_4_actualiza_GitHub.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -210,24 +242,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contenido
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#crear-un-archivo-nuevo-de-python-y-poner-algo-de-codigo">
-   5.1. Crear un archivo nuevo de Python y poner algo de código.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#uso-de-source-control-en-visual-studio-code-vsc">
-   5.2. Uso de Source Control en Visual Studio Code (VSC).
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -236,61 +250,25 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="el-tema-de-las-ramas">
-<h1><span class="section-number">5. </span>El tema de las ramas.<a class="headerlink" href="#el-tema-de-las-ramas" title="Enlazar permanentemente con este título">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="anda-a-github-a-tu-repositorio">
+<h1><span class="section-number">9. </span>Anda a GitHub a tu repositorio<a class="headerlink" href="#anda-a-github-a-tu-repositorio" title="Enlazar permanentemente con este título">¶</a></h1>
 <ul class="simple">
-<li><p>Queremos ahora hacer una actualización de nuestro repositorio.</p></li>
-<li><p>Como ya vemos, estamos en la rama <span style="color: blue; font-family: Babas; font-size: 1.12em;">main</span>.</p></li>
-<li><p>Vamos a hacer una nueva <span style="color: blue; font-family: Babas; font-size: 1.12em;">rama</span>. En ocasiones se le llama rama de producción, es decir, la rama que queremos mostrar, que queremos subir como la versión funcional de nuestro proyecto.</p></li>
-<li><p>Supongamos que queremos hacer algún tipo de proyecto específico, por ejemplo, procesar una señal de audio para extraer de ella <span style="color: blue; font-family: Babas; font-size: 1.12em;">features</span> o características la señal. Para eso, crearemos una nueva rama que la llamaremos <span style="color: blue; font-family: Babas; font-size: 1.12em;">feature_1</span>. Para esto, vamos a ejecutar <span style="color: blue; font-family: Babas; font-size: 1.12em;">git checkout -b</span> y agregaremos a continuación, el nombre que le queremos dar a la nueva rama:</p></li>
+<li><p>Podrás ver claramente que dice:</p>
+<ul>
+<li><p><span style="color: blue; font-family: Babas; font-size: 1.12em;">feature_1 had recent pushes 6 minutes ago</span></p></li>
 </ul>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">kasparov@kasparov-MS-7B58:~/Escritorio/github/uso_git$ </span>git checkout -b feature_1
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>La idea es que el nombre de la rama sea lo más descriptivo posible de lo que contiene esa rama. Si todo está bien, deberíamos ver:</p></li>
+</li>
+<li><p>Ve la lista de ramas y verás que se agregó una nueva rama</p></li>
+<li><p>Puedes ir viendo las distintas ramas y cómo está el código en cada una</p></li>
+<li><p>Verás que la rama feature_1, tiene agregados dos archivos: tutorial_1.py y tutorial_2.py</p></li>
+<li><p>Y que cada archivo tiene su mensaje committ</p></li>
+<li><p>Si ves los committs esto es genial porque vemos lo que se cambió en los archivos y puedes entender qué es lo que hiciste</p></li>
+<li><p>Vamos a la terminal local</p></li>
+<li><p>Escribe: <span style="color: blue; font-family: Babas; font-size: 1.12em;"> git checkout main</span></p></li>
+<li><p>Con eso has vuelto a la rama main local. Ejecuta git status</p></li>
+<li><p>Te darás cuenta que ahí no hay ningún archivo de los que creaste en la otra rama</p></li>
+<li><p>Eso es porque todavía no hemos <span style="color: blue; font-family: Babas; font-size: 1.12em;">combinado</span> las ramas</p></li>
 </ul>
-<a class="bg-primary reference internal image-reference" href="../../_images/nueva_rama.png"><img alt="fishy" class="bg-primary align-center" src="../../_images/nueva_rama.png" style="width: 550px;" /></a>
-<ul class="simple">
-<li><p>Lo que hemos hecho en este paso anterior, es que hemos tomado todo el código que se encuentra en la rama <span style="color: blue; font-family: Babas; font-size: 1.12em;">main</span> y lo hemos copiado a esta nueva rama <span style="color: blue; font-family: Babas; font-size: 1.12em;">feature_1</span>. Imagínenselo como que ambas ramas ahora van en el mismo nivel de código, porque hasta ahora no hemos hecho ningún cambio.</p></li>
-<li><p>Aquí en esta rama nueva es donde empezamos a trabajar, a crear archivos y cambiar en el código.</p></li>
-</ul>
-<div class="section" id="crear-un-archivo-nuevo-de-python-y-poner-algo-de-codigo">
-<h2><span class="section-number">5.1. </span>Crear un archivo nuevo de Python y poner algo de código.<a class="headerlink" href="#crear-un-archivo-nuevo-de-python-y-poner-algo-de-codigo" title="Enlazar permanentemente con este título">¶</a></h2>
-<ul class="simple">
-<li><p>Ejecutaremos el siguiente comando para crear un archivo nuevo de Python:</p></li>
-</ul>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">kasparov@kasparov-MS-7B58:~/Escritorio/github/uso_git$ </span>touch tutorial_1.py
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Vamos a abrir el archivo recién creado usando Visual Studio Code y agregaremos un poco de cógido Python:</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Hello world </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-
-<span class="n">hello_world</span><span class="p">(</span><span class="s1">&#39;Víctor&#39;</span><span class="p">)</span> <span class="c1"># aquí vamos a llamar a nuestra función</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Para probar, vamos a ejecutar el código desde la terminal y si todo está bien, deberíamos ver:</p></li>
-</ul>
-<a class="bg-primary reference internal image-reference" href="../../_images/hello_world.png"><img alt="fishy" class="bg-primary align-center" src="../../_images/hello_world.png" style="width: 550px;" /></a>
-<ul class="simple">
-<li><p>En este ejemplo que ya funciona, vemos que estaríamos listos con nuestro <span style="color: blue; font-family: Babas; font-size: 1.12em;">feature_1</span>.</p></li>
-</ul>
-</div>
-<div class="section" id="uso-de-source-control-en-visual-studio-code-vsc">
-<h2><span class="section-number">5.2. </span>Uso de Source Control en Visual Studio Code (VSC).<a class="headerlink" href="#uso-de-source-control-en-visual-studio-code-vsc" title="Enlazar permanentemente con este título">¶</a></h2>
-<ul class="simple">
-<li><p><span style="color: blue; font-family: Babas; font-size: 1.12em;">Source Control</span> en VSC está integrado y se conecta con <span style="color: blue; font-family: Babas; font-size: 1.12em;">Git</span>.</p></li>
-<li><p>En VSC, vamos a abrir una carpeta. Desde VSC nos vamos a nuestro repositorio que está en el escritorio, en la carpeta que llamamos: <span style="color: blue; font-family: Babas; font-size: 1.12em;">github</span>, y llegamos a nuestro repositorio: <span style="color: blue; font-family: Babas; font-size: 1.12em;">uso_git</span>.</p></li>
-<li><p>Y abrimos nuestro repositorio <span style="color: blue; font-family: Babas; font-size: 1.12em;">uso_git</span>.</p></li>
-<li><p>Podemos observar en VSC todos los archivos que están en nuestro repositorio.</p></li>
-<li><p>Pero, también a mano izquierda, podemos observar una pestaña que se llama <span style="color: blue; font-family: Babas; font-size: 1.12em;">Source Control</span>, en donde se muestran todos los cambios que hemos ido realizando. Debería decir que solamente hemos cambiado <span style="color: blue; font-family: Babas; font-size: 1.12em;">tutorial_1.py</span>.</p></li>
-<li><p>Otra cosa importante que observar es que al fondo de VSC nos dice en qué rama nos encontramos, en este caso, <span style="color: blue; font-family: Babas; font-size: 1.12em;">feature_1</span>.</p></li>
-</ul>
-</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -306,7 +284,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./contenidos/contenidos_3"
+            path: "./contenidos/contenidos_4"
         },
         predefinedOutput: true
     }
@@ -323,19 +301,19 @@
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="../contenidos_2/contenidos_2_incluyendo_codigos.html" title="anterior página">
+        <a class="left-prev" href="contenidos_4_push.html" title="anterior página">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">anterior</p>
-                <p class="prevnext-title"><span class="section-number">4. </span>El tema de las ramas.</p>
+                <p class="prevnext-title"><span class="section-number">8. </span>Uso de los comandos git push</p>
             </div>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="contenidos_3_incluyendo_codigos.html" title="siguiente página">
+        <a class="right-next" href="contenidos_4_merge.html" title="siguiente página">
             <div class="prevnext-info">
                 <p class="prevnext-label">siguiente</p>
-                <p class="prevnext-title"><span class="section-number">6. </span>El tema de las ramas.</p>
+                <p class="prevnext-title"><span class="section-number">10. </span>Combina tus ramas</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>

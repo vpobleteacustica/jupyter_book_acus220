@@ -1,58 +1,31 @@
-# El tema de las ramas.
+# Seguimiento de los cambios.
 
-* Queremos ahora hacer una actualización de nuestro repositorio.
-
-* Como ya vemos, estamos en la rama <span style="color: blue; font-family: Babas; font-size: 1.12em;">main</span>.
-
-* Vamos a hacer una nueva <span style="color: blue; font-family: Babas; font-size: 1.12em;">rama</span>. En ocasiones se le llama rama de producción, es decir, la rama que queremos mostrar, que queremos subir como la versión funcional de nuestro proyecto.
-
-* Supongamos que queremos hacer algún tipo de proyecto específico, por ejemplo, procesar una señal de audio para extraer de ella <span style="color: blue; font-family: Babas; font-size: 1.12em;">features</span> o características la señal. Para eso, crearemos una nueva rama que la llamaremos <span style="color: blue; font-family: Babas; font-size: 1.12em;">feature_1</span>. Para esto, vamos a ejecutar <span style="color: blue; font-family: Babas; font-size: 1.12em;">git checkout -b</span> y agregaremos a continuación, el nombre que le queremos dar a la nueva rama:
+* * En tu terminal, crea otro archivo nuevo de Python. Nómbralo como: tutorial_2.py:
 
 ```console
-kasparov@kasparov-MS-7B58:~/Escritorio/github/uso_git$ git checkout -b feature_1
+kasparov@kasparov-MS-7B58:~/Escritorio/github/uso_git$ touch tutorial_2.py
 ```
+* Abre el archivo recién creado usando Visual Studio Code.
 
-* La idea es que el nombre de la rama sea lo más descriptivo posible de lo que contiene esa rama. Si todo está bien, deberíamos ver:
-
-<img src="/figures_readme/nueva_rama.png" alt="fishy" class="bg-primary" width="550px" align="center"/>
-
-* Lo que hemos hecho en este paso anterior, es que hemos tomado todo el código que se encuentra en la rama <span style="color: blue; font-family: Babas; font-size: 1.12em;">main</span> y lo hemos copiado a esta nueva rama <span style="color: blue; font-family: Babas; font-size: 1.12em;">feature_1</span>. Imagínenselo como que ambas ramas ahora van en el mismo nivel de código, porque hasta ahora no hemos hecho ningún cambio.
-
-* Aquí en esta rama nueva es donde empezamos a trabajar, a crear archivos y cambiar en el código.
-
-## Crear un archivo nuevo de Python y poner algo de código.
-
-* Ejecutaremos el siguiente comando para crear un archivo nuevo de Python:
-
-```console
-kasparov@kasparov-MS-7B58:~/Escritorio/github/uso_git$ touch tutorial_1.py
-```
-
-* Vamos a abrir el archivo recién creado usando Visual Studio Code y agregaremos un poco de cógido Python:
+* Como antes, a modo de juego, agrega el siguiente cógido Python:
 
 ```
-def hello_world(name):
-    print(f'Hello world {name}')
+def good_bye_world(name):
+    print(f'Good bye world {name}')
 
-hello_world('Víctor') # aquí vamos a llamar a nuestra función
+good_bye_world('Víctor') # aquí vamos a llamar a nuestra función
 ```
 
-* Para probar, vamos a ejecutar el código desde la terminal y si todo está bien, deberíamos ver:
+* Ahora tienes dos archivos nuevos. 
 
-<img src="/figures_readme/hello_world.png" alt="fishy" class="bg-primary" width="550px" align="center"/>
+* Si ves Source Control, puedes observar los cambios. Te dice que hay dos archivos nuevos en los que has hecho cambios!
 
-* En este ejemplo que ya funciona, vemos que estaríamos listos con nuestro <span style="color: blue; font-family: Babas; font-size: 1.12em;">feature_1</span>.
+* Pero también en tu terminal puedes ver el estado de tu repositorio y observar los cambios que has hecho.
 
-## Uso de Source Control en Visual Studio Code (VSC).
+* Anda a tu terminal y ejecuta los comandos: <span style="color: blue; font-family: Babas; font-size: 1.12em;">git status</span>.
 
-* <span style="color: blue; font-family: Babas; font-size: 1.12em;">Source Control</span> en VSC está integrado y se conecta con <span style="color: blue; font-family: Babas; font-size: 1.12em;">Git</span>.
+* Te muestra que hay dos archivos que no han sido <span style="color: blue; font-family: Babas; font-size: 1.12em;">trackeados</span>, o en otras palabras, están sin seguimiento.
 
-* En VSC, vamos a abrir una carpeta. Desde VSC nos vamos a nuestro repositorio que está en el escritorio, en la carpeta que llamamos: <span style="color: blue; font-family: Babas; font-size: 1.12em;">github</span>, y llegamos a nuestro repositorio: <span style="color: blue; font-family: Babas; font-size: 1.12em;">uso_git</span>.
+* Quiere decir que hay dos archivos que no se han agregado y necesitan ser actualizados para poder subir los cambios.
 
-* Y abrimos nuestro repositorio <span style="color: blue; font-family: Babas; font-size: 1.12em;">uso_git</span>.
 
-* Podemos observar en VSC todos los archivos que están en nuestro repositorio.
-
-* Pero, también a mano izquierda, podemos observar una pestaña que se llama <span style="color: blue; font-family: Babas; font-size: 1.12em;">Source Control</span>, en donde se muestran todos los cambios que hemos ido realizando. Debería decir que solamente hemos cambiado <span style="color: blue; font-family: Babas; font-size: 1.12em;">tutorial_1.py</span>.
-
-* Otra cosa importante que observar es que al fondo de VSC nos dice en qué rama nos encontramos, en este caso, <span style="color: blue; font-family: Babas; font-size: 1.12em;">feature_1</span>.

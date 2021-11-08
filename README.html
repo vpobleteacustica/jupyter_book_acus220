@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Creación de un proyecto usando un repositorio GitHub &#8212; &lt;font size=&#34;4&#34;&gt; ACUS220 Acústica computacional con Python&lt;/font&gt;</title>
+    <title>Crear un proyecto usando un repositorio GitHub &#8212; &lt;font size=&#34;4&#34;&gt; ACUS220 Acústica computacional con Python&lt;/font&gt;</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -52,7 +52,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="1. Crea un proyecto en un repositorio nuevo." href="contenidos/contenidos_1/contenidos_1_crear_repo.html" />
+    <link rel="next" title="1. En GitHub crea un repositorio nuevo." href="contenidos/contenidos_1/contenidos_1_crear_repo.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -89,7 +89,7 @@
         <ul class="nav bd-sidenav">
  <li class="toctree-l1 current">
   <a class="reference internal" href="#">
-   Creación de un proyecto usando un repositorio GitHub
+   Crear un proyecto usando un repositorio GitHub
   </a>
  </li>
 </ul>
@@ -101,12 +101,12 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="contenidos/contenidos_1/contenidos_1_crear_repo.html">
-   1. Crea un proyecto en un repositorio nuevo.
+   1. En GitHub crea un repositorio nuevo.
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="contenidos/contenidos_1/contenidos_1_ramas.html">
-   2. Ramas en el repositorio.
+  <a class="reference internal" href="contenidos/contenidos_1/contenidos_1_git_clone_git_status.html">
+   2. Uso de git clone y git status
   </a>
  </li>
 </ul>
@@ -118,29 +118,61 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="contenidos/contenidos_2/contenidos_2_actualizar_repo.html">
-   3. El tema de las ramas.
+   3. Uso de git checkout -b &lt;nombre_de_la_nueva_rama&gt;
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="contenidos/contenidos_2/contenidos_2_incluyendo_codigos.html">
-   4. El tema de las ramas.
+   4. Seguimiento de los cambios.
   </a>
  </li>
 </ul>
 <p class="caption" role="heading">
  <span class="caption-text">
-  El tema de las ramas 2
+  Agregar cambios y hacer commits
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="contenidos/contenidos_3/contenidos_3_actualizar_repo.html">
-   5. El tema de las ramas.
+  <a class="reference internal" href="contenidos/contenidos_3/contenidos_3_agregar_cambios.html">
+   5. Uso de git add, para agregar los cambios.
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="contenidos/contenidos_3/contenidos_3_incluyendo_codigos.html">
-   6. El tema de las ramas.
+  <a class="reference internal" href="contenidos/contenidos_3/contenidos_3_paso_paso.html">
+   6. Paso a paso para actualizar:
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contenidos/contenidos_3/contenidos_3_los_committs.html">
+   7. Uso del comando commit:
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Uso git push y actualiza GitHub
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="contenidos/contenidos_4/contenidos_4_push.html">
+   8. Uso de los comandos git push
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contenidos/contenidos_4/contenidos_4_actualiza_GitHub.html">
+   9. Anda a GitHub a tu repositorio
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contenidos/contenidos_4/contenidos_4_merge.html">
+   10. Combina tus ramas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contenidos/contenidos_4/contenidos_4_actualiza_repo_local.html">
+   11. Uso de comando git pull
   </a>
  </li>
 </ul>
@@ -230,12 +262,28 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="creacion-de-un-proyecto-usando-un-repositorio-github">
-<h1>Creación de un proyecto usando un repositorio GitHub<a class="headerlink" href="#creacion-de-un-proyecto-usando-un-repositorio-github" title="Enlazar permanentemente con este título">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="crear-un-proyecto-usando-un-repositorio-github">
+<h1>Crear un proyecto usando un repositorio GitHub<a class="headerlink" href="#crear-un-proyecto-usando-un-repositorio-github" title="Enlazar permanentemente con este título">¶</a></h1>
 <div class="section" id="resumen-de-la-clase">
 <h2>Resumen de la clase<a class="headerlink" href="#resumen-de-la-clase" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>En esta sesión queremos aprender a usar los conceptos básicos de <a class="reference external" href="https://git-scm.com/">Git</a> y, al mismo tiempo, crear un proyecto nuevo usando un repositorio GitHub. Para esto, vamos a utilizar el programa Visual Studio Code (VSC) y la terminal o consola para conectarnos con Git, en conjunto con la función Source Control de VSC que está integrada y se conecta también con Git.</p>
-<p>Estos proyectos hacen que el trabajo remoto con un equipo de personas que desarrollan los códigos sean útiles, particularmente, en ingeniería, permitiendo transmitir nuestros cambios y actualizaciones en el código, asíncronamente.</p>
+<ul class="simple">
+<li><p>En esta sesión:</p>
+<ul>
+<li><p>Queremos aprender a usar los conceptos básicos del sistema de control de versiones <a class="reference external" href="https://git-scm.com/">Git</a>.</p></li>
+<li><p>Al mismo tiempo, crear un proyecto nuevo usando un repositorio GitHub.</p></li>
+<li><p>Usar tanto la terminal o consola para conectarnos con Git, como también, el programa Visual Studio Code (VSC) con la función Source Control que está integrada y se conecta con Git.</p></li>
+</ul>
+</li>
+<li><p>Este tipo de proyectos y repositorios te permiten:</p>
+<ul>
+<li><p>Hacer más fácil tu trabajo.</p></li>
+<li><p>Mantener un historial de tus códigos.</p></li>
+<li><p>Transmitir cambios y actualizaciones de tus códigos, asíncronamente.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
 </div>
@@ -278,7 +326,7 @@
         <a class="right-next" href="contenidos/contenidos_1/contenidos_1_crear_repo.html" title="siguiente página">
             <div class="prevnext-info">
                 <p class="prevnext-label">siguiente</p>
-                <p class="prevnext-title"><span class="section-number">1. </span>Crea un proyecto en un repositorio nuevo.</p>
+                <p class="prevnext-title"><span class="section-number">1. </span>En GitHub crea un repositorio nuevo.</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>

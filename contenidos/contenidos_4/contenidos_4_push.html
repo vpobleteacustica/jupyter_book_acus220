@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2. Ramas en el repositorio. &#8212; &lt;font size=&#34;4&#34;&gt; ACUS220 Acústica computacional con Python&lt;/font&gt;</title>
+    <title>8. Uso de los comandos git push &#8212; &lt;font size=&#34;4&#34;&gt; ACUS220 Acústica computacional con Python&lt;/font&gt;</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -52,8 +52,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Índice" href="../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../search.html" />
-    <link rel="next" title="3. El tema de las ramas." href="../contenidos_2/contenidos_2_actualizar_repo.html" />
-    <link rel="prev" title="1. Crea un proyecto en un repositorio nuevo." href="contenidos_1_crear_repo.html" />
+    <link rel="next" title="9. Anda a GitHub a tu repositorio" href="contenidos_4_actualiza_GitHub.html" />
+    <link rel="prev" title="7. Uso del comando commit:" href="../contenidos_3/contenidos_3_los_committs.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -90,7 +90,7 @@
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../README.html">
-   Creación de un proyecto usando un repositorio GitHub
+   Crear un proyecto usando un repositorio GitHub
   </a>
  </li>
 </ul>
@@ -99,15 +99,15 @@
   Crear un proyecto en un repositorio nuevo
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="contenidos_1_crear_repo.html">
-   1. Crea un proyecto en un repositorio nuevo.
+  <a class="reference internal" href="../contenidos_1/contenidos_1_crear_repo.html">
+   1. En GitHub crea un repositorio nuevo.
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   2. Ramas en el repositorio.
+ <li class="toctree-l1">
+  <a class="reference internal" href="../contenidos_1/contenidos_1_git_clone_git_status.html">
+   2. Uso de git clone y git status
   </a>
  </li>
 </ul>
@@ -119,29 +119,61 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../contenidos_2/contenidos_2_actualizar_repo.html">
-   3. El tema de las ramas.
+   3. Uso de git checkout -b &lt;nombre_de_la_nueva_rama&gt;
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../contenidos_2/contenidos_2_incluyendo_codigos.html">
-   4. El tema de las ramas.
+   4. Seguimiento de los cambios.
   </a>
  </li>
 </ul>
 <p class="caption" role="heading">
  <span class="caption-text">
-  El tema de las ramas 2
+  Agregar cambios y hacer commits
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../contenidos_3/contenidos_3_actualizar_repo.html">
-   5. El tema de las ramas.
+  <a class="reference internal" href="../contenidos_3/contenidos_3_agregar_cambios.html">
+   5. Uso de git add, para agregar los cambios.
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../contenidos_3/contenidos_3_incluyendo_codigos.html">
-   6. El tema de las ramas.
+  <a class="reference internal" href="../contenidos_3/contenidos_3_paso_paso.html">
+   6. Paso a paso para actualizar:
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../contenidos_3/contenidos_3_los_committs.html">
+   7. Uso del comando commit:
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Uso git push y actualiza GitHub
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   8. Uso de los comandos git push
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contenidos_4_actualiza_GitHub.html">
+   9. Anda a GitHub a tu repositorio
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contenidos_4_merge.html">
+   10. Combina tus ramas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contenidos_4_actualiza_repo_local.html">
+   11. Uso de comando git pull
   </a>
  </li>
 </ul>
@@ -185,7 +217,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/contenidos/contenidos_1/contenidos_1_ramas.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/contenidos/contenidos_4/contenidos_4_push.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -210,19 +242,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contenido
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#entra-a-la-carpeta-cd">
-   2.1. Entra a la carpeta (cd).
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -231,58 +250,30 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="ramas-en-el-repositorio">
-<h1><span class="section-number">2. </span>Ramas en el repositorio.<a class="headerlink" href="#ramas-en-el-repositorio" title="Enlazar permanentemente con este título">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="uso-de-los-comandos-git-push">
+<h1><span class="section-number">8. </span>Uso de los comandos git push<a class="headerlink" href="#uso-de-los-comandos-git-push" title="Enlazar permanentemente con este título">¶</a></h1>
 <ul class="simple">
-<li><p>Siempre al principio en el repositorio hay una sola <span style="color: blue; font-family: Babas; font-size: 1.12em;">rama</span> que se llama main y que es la rama principal.</p></li>
-<li><p>Trae ahora a tu máquina local, este repositorio GitHub recién creado.</p></li>
-<li><p>Por simplicidad, en el escritorio de tu máquina local, crea una nueva carpeta. Por ejemplo, llámale <span style="color: blue; font-family: Babas; font-size: 1.12em;">github</span>.</p></li>
-<li><p>Cambia el directorio (<span style="color: blue; font-family: Babas; font-size: 1.12em;">cd</span>) y entra a tu nueva carpeta. Abre tu terminal y activa tu ambiente virtual. Asegúrate de tener instalado python y git.</p></li>
-<li><p>Clona el repositorio usando un cliente git.</p></li>
-<li><p>Copia la dirección del repositorio que acabamos de crear en GitHub y en la terminal abierta, ejecuta la siguiente línea de comando:</p></li>
+<li><p>Vamos a la terminal y subiremos los cambios.</p></li>
+<li><p>Ejecuta los comandos <span style="color: blue; font-family: Babas; font-size: 1.12em;">git push</span></p></li>
+<li><p>Aquí empiezan algunos problemas!</p></li>
+<li><p>Te saldrá el siguiente error:</p>
+<ul>
+<li><p>fatal: The current branch feature_1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+git push –set-upstream origin feature_1</p></li>
+<li><p>fatal: La rama actual feature_1 no tiene una rama upstream.
+Para realizar un push de la rama actual y configurar el remoto como upstream, use
+git push –set-upstream origin feature_1</p></li>
 </ul>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">kasparov@kasparov-MS-7B58:~/Escritorio/github$ </span>git clone &lt;link del repositorio GitHub&gt;
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Si todo está bien, deberías ver:</p></li>
+</li>
+<li><p>Nos dice esto porque la rama en la que estamos es local y no se ha subido al repositorio online en GitHub. Si te fijas en GitHub, ahí sólo tienes una sola rama que la rama main.</p></li>
+<li><p>Entonces, copia en terminal ese comando que te apareció: git push –set-upstream origin feature_1</p></li>
+<li><p>Y ejecútalo!</p></li>
+<li><p>Te pedirá tus credenciales</p></li>
+<li><p>Y veamos git status</p></li>
+<li><p>Te debería decir que todo está actualizado</p></li>
+<li><p>Ve ahora a GitHub y actualiza tu página</p></li>
 </ul>
-<a class="bg-primary reference internal image-reference" href="../../_images/git_clone.png"><img alt="fishy" class="bg-primary align-center" src="../../_images/git_clone.png" style="width: 550px;" /></a>
-<p><br/><br/></p>
-<div class="section" id="entra-a-la-carpeta-cd">
-<h2><span class="section-number">2.1. </span>Entra a la carpeta (cd).<a class="headerlink" href="#entra-a-la-carpeta-cd" title="Enlazar permanentemente con este título">¶</a></h2>
-<ul class="simple">
-<li><p>En la terminal abierta, entra a la carpeta ejecutando la línea de comando:</p></li>
-</ul>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">kasparov@kasparov-MS-7B58:~/Escritorio/github$ </span><span class="nb">cd</span> uso_github
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>El único archivo que se ve es el <span style="color: blue; font-family: Babas; font-size: 1.12em;">README.md</span>. Deberías ver lo siguiente:</p></li>
-</ul>
-<a class="bg-primary reference internal image-reference" href="../../_images/readme.png"><img alt="fishy" class="bg-primary align-center" src="../../_images/readme.png" style="width: 550px;" /></a>
-<p><br/><br/></p>
-<ul class="simple">
-<li><p>El archivo <span style="color: blue; font-family: Babas; font-size: 1.12em;">.gitignore</span> está oculto. Para ver los archivos ocultos ejecuta la siguiente línea de comando:</p></li>
-</ul>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">kasparov@kasparov-MS-7B58:~/Escritorio/github/uso_git$ </span>ls -la
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Si todo está bien, deberías ver:</p></li>
-</ul>
-<a class="bg-primary reference internal image-reference" href="../../_images/hidden.png"><img alt="fishy" class="bg-primary align-center" src="../../_images/hidden.png" style="width: 550px;" /></a>
-<p><br/><br/></p>
-<ul class="simple">
-<li><p>También, observa la carpeta <span style="color: blue; font-family: Babas; font-size: 1.12em;">.git</span>. Sin esta carpeta no podrías hacer, por ejemplo, lo siguiente:</p></li>
-</ul>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">kasparov@kasparov-MS-7B58:~/Escritorio/github/uso_git$ </span>git status
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Lo que te permite ver que esto es un proyecto Git. Siempre para ver el estado de tu repositorio, usa los comandos <span style="color: blue; font-family: Babas; font-size: 1.12em;">git status</span>. Te muestra en qué rama estás y te dice que esta rama ya está actualizada.</p></li>
-</ul>
-</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -298,7 +289,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./contenidos/contenidos_1"
+            path: "./contenidos/contenidos_4"
         },
         predefinedOutput: true
     }
@@ -315,19 +306,19 @@
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="contenidos_1_crear_repo.html" title="anterior página">
+        <a class="left-prev" href="../contenidos_3/contenidos_3_los_committs.html" title="anterior página">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">anterior</p>
-                <p class="prevnext-title"><span class="section-number">1. </span>Crea un proyecto en un repositorio nuevo.</p>
+                <p class="prevnext-title"><span class="section-number">7. </span>Uso del comando commit:</p>
             </div>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="../contenidos_2/contenidos_2_actualizar_repo.html" title="siguiente página">
+        <a class="right-next" href="contenidos_4_actualiza_GitHub.html" title="siguiente página">
             <div class="prevnext-info">
                 <p class="prevnext-label">siguiente</p>
-                <p class="prevnext-title"><span class="section-number">3. </span>El tema de las ramas.</p>
+                <p class="prevnext-title"><span class="section-number">9. </span>Anda a GitHub a tu repositorio</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1. En GitHub crea un repositorio nuevo. &#8212; &lt;font size=&#34;4&#34;&gt; ACUS220 Acústica computacional con Python&lt;/font&gt;</title>
+    <title>11. Uso de comando git pull &#8212; &lt;font size=&#34;4&#34;&gt; ACUS220 Acústica computacional con Python&lt;/font&gt;</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -52,8 +52,7 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Índice" href="../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../search.html" />
-    <link rel="next" title="2. Uso de git clone y git status" href="contenidos_1_git_clone_git_status.html" />
-    <link rel="prev" title="Crear un proyecto usando un repositorio GitHub" href="../../README.html" />
+    <link rel="prev" title="10. Combina tus ramas" href="contenidos_4_merge.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -99,14 +98,14 @@
   Crear un proyecto en un repositorio nuevo
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../contenidos_1/contenidos_1_crear_repo.html">
    1. En GitHub crea un repositorio nuevo.
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="contenidos_1_git_clone_git_status.html">
+  <a class="reference internal" href="../contenidos_1/contenidos_1_git_clone_git_status.html">
    2. Uso de git clone y git status
   </a>
  </li>
@@ -155,24 +154,24 @@
   Uso git push y actualiza GitHub
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../contenidos_4/contenidos_4_push.html">
+  <a class="reference internal" href="contenidos_4_push.html">
    8. Uso de los comandos git push
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../contenidos_4/contenidos_4_actualiza_GitHub.html">
+  <a class="reference internal" href="contenidos_4_actualiza_GitHub.html">
    9. Anda a GitHub a tu repositorio
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../contenidos_4/contenidos_4_merge.html">
+  <a class="reference internal" href="contenidos_4_merge.html">
    10. Combina tus ramas
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../contenidos_4/contenidos_4_actualiza_repo_local.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    11. Uso de comando git pull
   </a>
  </li>
@@ -217,7 +216,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/contenidos/contenidos_1/contenidos_1_crear_repo.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/contenidos/contenidos_4/contenidos_4_actualiza_repo_local.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -242,19 +241,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contenido
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#observa-lo-que-se-muestra-en-tu-repositorio">
-   1.1. Observa lo que se muestra en tu repositorio.
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -263,48 +249,80 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="en-github-crea-un-repositorio-nuevo">
-<h1><span class="section-number">1. </span>En GitHub crea un repositorio nuevo.<a class="headerlink" href="#en-github-crea-un-repositorio-nuevo" title="Enlazar permanentemente con este título">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="uso-de-comando-git-pull">
+<h1><span class="section-number">11. </span>Uso de comando git pull<a class="headerlink" href="#uso-de-comando-git-pull" title="Enlazar permanentemente con este título">¶</a></h1>
 <ul class="simple">
-<li><p>Entra a tu cuenta en GitHub y crea un repositorio nuevo para tu proyecto.</p></li>
-<li><p>Dale un nombre a tu repositorio.</p>
+<li><p>Actualiza los cambios hechos en GitHub en tu repositorio local</p></li>
+<li><p>En la terminal ejecuta: <span style="color: blue; font-family: Babas; font-size: 1.12em;">git pull</span></p></li>
+<li><p>Observas con: ls que ya están en local los archivos tutorial_1.py  tutorial_2.py</p></li>
+<li><p>Con eso ya estás actualizado con lo que hay en la rama main del repositorio de GitHub</p></li>
+<li><p>Si haces git status, te darás cuenta en tu repositorio local que no hay ninguna rama a excepción de la rama main, porque ya se eliminó la otra rama</p></li>
+<li><p>Vamos a crear ahora otra rama que llamaremos feature_2</p></li>
+<li><p>Ejecuta los comandos: <span style="color: blue; font-family: Babas; font-size: 1.12em;">git checkout -b feature_2</span></p></li>
+<li><p>Si ejecutas git status te dirá que te cambiaste a la rama feature_2 con el mismo código de main</p></li>
+<li><p>Vamos a VSC y vamos a hacer unos cambios a los archivos</p></li>
+<li><p>Hacer un cambio al archivo README</p>
 <ul>
-<li><p>Por ejemplo, llamémosle <span style="color: blue; font-family: Babas; font-size: 1.12em;">uso_github</span>.</p></li>
+<li><p><span style="color: blue; font-family: Babas; font-size: 1.12em;">## Run</span></p></li>
+<li><p><span style="color: blue; font-family: Babas; font-size: 1.12em;">```</span></p></li>
+<li><p><span style="color: blue; font-family: Babas; font-size: 1.12em;">python tutorial_1.py</span>
+<span style="color: blue; font-family: Babas; font-size: 1.12em;">python tutorial_2.py</span></p></li>
+<li><p><span style="color: blue; font-family: Babas; font-size: 1.12em;">```</span></p></li>
 </ul>
 </li>
-<li><p>Redacta una descripción inicial.</p>
-<ul>
-<li><p>Por ejemplo: Puedes describir cuál es el objetivo del proyecto que deseas desarrollar.</p></li>
+<li><p>Cambiamos en los archivos tutorial_1.py y tutorial_2.py:</p></li>
 </ul>
-</li>
-<li><p>Elige entre Privado o Público.</p>
-<ul>
-<li><p>Sugerencia seleccionar Público.</p></li>
-</ul>
-</li>
-<li><p>Agrega un archivo README.</p>
-<ul>
-<li><p>Este es un instructivo global del repositorio que se está creando.</p></li>
-</ul>
-</li>
-<li><p>Agrega un archivo <span style="color: blue; font-family: Babas; font-size: 1.12em;">.gitignore</span></p>
-<ul>
-<li><p>Este es importante porque es aquí donde declaras qué archivos o carpetas <span style="color: blue; font-family: Babas; font-size: 1.12em;">no quieres</span> que se suban al repositorio en GitHub, porque quieres que se mantengan de manera local solamente. Como por ejemplo, las carpetas y archivos de tu entorno virtual ya que no quieres que esas instalaciones locales se suban al repositorio en GitHub.</p></li>
-<li><p>Observa las opciones que ofrece .gitignore. Dependiendo del lenguaje y del proyecto, uno puede elegir un .gitignore en particular, como por ejemplo, <span style="color: blue; font-family: Babas; font-size: 1.12em;">Python</span>, que tiene ya una lista de archivos posibles que no quieres subir.</p></li>
-</ul>
-</li>
-<li><p>Omite la licencia por esta vez <span style="color: blue; font-family: Babas; font-size: 1.12em;">Choose a license</span>.</p></li>
-<li><p>Crea tu repositorio.</p></li>
-</ul>
-<div class="section" id="observa-lo-que-se-muestra-en-tu-repositorio">
-<h2><span class="section-number">1.1. </span>Observa lo que se muestra en tu repositorio.<a class="headerlink" href="#observa-lo-que-se-muestra-en-tu-repositorio" title="Enlazar permanentemente con este título">¶</a></h2>
-<ul class="simple">
-<li><p>Observa el archivo Readme que se ve al principio.</p></li>
-<li><p>El archivo .gitignore para Python que se seleccionó, que muestra carpetas y archivos que se generaron en Python. Por ejemplo, se observan los <span style="color: blue; font-family: Babas; font-size: 1.12em;"># Jupyter Notebook</span>, <span style="color: blue; font-family: Babas; font-size: 1.12em;"># Environments</span>, entre otros.</p></li>
-<li><p>Este archivo .gitignore es totalmente editable.</p></li>
-<li><p>Se observa que hay una sección de ramas y se ve por ahora, que hay una sola, que es la rama <span style="color: blue; font-family: Babas; font-size: 1.12em;">main</span>.</p></li>
-</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">def hello_world(name):</span>
+<span class="go">    print(f&#39;Hello world {name}&#39;)</span>
+<span class="go">name = &#39;Víctor&#39;</span>
+<span class="go">hello_world(name) # aquí vamos a llamar a nuestra función</span>
+</pre></div>
 </div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">def good_bye_world(name):</span>
+<span class="go">    print(f&#39;Good bye world {name}&#39;)</span>
+<span class="go">name = &#39;Víctor&#39;</span>
+<span class="go">good_bye_world(name) # aquí vamos a llamar a nuestra función</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Lo genial es que VSC te muestra los archivos a los que le has hecho cambios en color amarillo</p></li>
+<li><p>Para ver los cambios que has hecho en VSC, te vas a Source Control</p></li>
+<li><p>Puedes ver los archivos que se han modificado, línea a línea</p></li>
+<li><p>Vamos a la terminal y ejecutamos git status para ver el estado de la rama feature_2</p></li>
+<li><p>Nos muestra los archivos que se han modificado</p></li>
+<li><p>Pero que todavía no han sido movidos al area <span style="color: blue; font-family: Babas; font-size: 1.12em;">staging</span>, no han sido agregados</p></li>
+<li><p>Para agregarlos, ejecuta: <span style="color: blue; font-family: Babas; font-size: 1.12em;">git add .</span></p></li>
+<li><p>Ejecuta: git status</p></li>
+<li><p>Podrás que ver que todos los están en el área de stage</p></li>
+<li><p>En la terminal, hHs un committ del archivo README</p></li>
+<li><p>Para eso ejecuta: git commit <a class="reference external" href="http://README.md">README.md</a> -m “Run instructions added”</p></li>
+<li><p>Ejecuta: git status y verás que ya no está en el área de stage</p></li>
+<li><p>Para committear todos los archivos que quedan, ejecuta git commit -m “Hello and bye world functions updated”</p></li>
+<li><p>Ejecuta: git status y verás que ya no hay ningún archivo en el área de staging</p></li>
+<li><p>Esto quiere decir que está listo para hacer push</p></li>
+<li><p>Otra vez te va a decir que: git push –set-upstream origin feature_2</p></li>
+<li><p>Recuerda que te dice que feature_2 no ha sido creada en GitHub y que solo es una rama local</p></li>
+<li><p>Para crearla en GitHub ejecutamos este comando: git push –set-upstream origin feature_2</p></li>
+<li><p>Te pedirá tus credenciales</p></li>
+<li><p>Hacemos git status</p></li>
+<li><p>Nos vamos a cambiar ahora a la rama main (local!)</p></li>
+<li><p>Ejecutamos: git checkout main</p></li>
+<li><p>Aquí en main no hay nada actualizado porque los cambios los hicimos en la otra rama</p></li>
+<li><p>Nos vamos a GitHub y actualizamos</p></li>
+<li><p>Nos dice que: feature_2 had recent pushes 4 minutes ago</p></li>
+<li><p>También vemos que hay otra rama: feature_2</p></li>
+<li><p>Observas los cambios</p></li>
+<li><p>Pero estos cambios aún no están en main</p></li>
+<li><p>Para hacer estos vamos a Compare &amp; pull request</p></li>
+<li><p>Observa: los cambios va a ser actualizados de la rama feature_2 a main</p></li>
+<li><p>Ejecuta: Merge and pull request</p></li>
+<li><p>Ejecuta: Confirm merge</p></li>
+<li><p>Borra la rama feature_2 y te vas al código</p></li>
+<li><p>te podrás dar cuenta que no hay ninguna otra rama, solamente main</p></li>
+<li><p>Y observas que los cambios están actualizados en main</p></li>
+<li><p>Revisa los committs para que veas los cambios que se hicieron</p></li>
+<li><p>Y puedes ver todos los committs que se han hecho!</p></li>
+</ul>
 </div>
 
     <script type="text/x-thebe-config">
@@ -320,7 +338,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./contenidos/contenidos_1"
+            path: "./contenidos/contenidos_4"
         },
         predefinedOutput: true
     }
@@ -337,23 +355,14 @@
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="../../README.html" title="anterior página">
+        <a class="left-prev" href="contenidos_4_merge.html" title="anterior página">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">anterior</p>
-                <p class="prevnext-title">Crear un proyecto usando un repositorio GitHub</p>
+                <p class="prevnext-title"><span class="section-number">10. </span>Combina tus ramas</p>
             </div>
         </a>
     </div>
-     <div id="next">
-        <a class="right-next" href="contenidos_1_git_clone_git_status.html" title="siguiente página">
-            <div class="prevnext-info">
-                <p class="prevnext-label">siguiente</p>
-                <p class="prevnext-title"><span class="section-number">2. </span>Uso de git clone y git status</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
 
 </div>
         
