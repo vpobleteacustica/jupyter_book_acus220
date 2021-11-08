@@ -58,7 +58,7 @@ good_bye_world(name) # aquí vamos a llamar a nuestra función
 
 * Podrás que ver que todos los están en el área de stage
 
-* En la terminal, hHs un committ del archivo README
+* En la terminal, has un committ del archivo README
 
 * Para eso ejecuta: git commit README.md -m 'Run instructions added'
 
